@@ -13,13 +13,14 @@ It consists of multiple submodules that decouples the frontend (compilation and 
 ## Getting Started
 
 PyTFHE-OSS has been tested under Ubuntu 22.04 and RHEL9.
+It consists of the following submodules:
 
-[CPU Engine](https://github.com/jiaaom/pyTFHE-CPU) is the CPU execution backend. It also includes basic test cases.
+[CPU Engine](https://github.com/jiaaom/pyTFHE-CPU) is the CPU execution backend.
 
-[Frontend](https://github.com/jiaaom/pyTFHE-Frontend)
+[CUDA Engine](https://github.com/jiaaom/CUDA_TFHE) is the CUDA execution backend.
 
-[CUDA Engine](https://github.com/jiaaom/CUDA_TFHE)
+[PyTFHE-rs](https://github.com/jiaaom/pyTFHE-rs) contains the support library for building graphs, IR support, and scheduler.
 
-[Benchmarks](https://github.com/jiaaom/tnfs-benchmarks)
+[Frontend](https://github.com/jiaaom/pyTFHE-Frontend) is the frontend for compilation, scheduler, and execution engines.
 
-[PyTFHE-rs](https://github.com/jiaaom/pyTFHE-rs)
+[Benchmarks](https://github.com/jiaaom/tnfs-benchmarks) contains some optional benchmarks used for performance testing.
