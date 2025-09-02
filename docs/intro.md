@@ -17,10 +17,10 @@ It consists of the following submodules:
 
 [CPU Engine](https://github.com/jiaaom/pyTFHE-CPU) is the CPU execution backend.
 
-[CUDA Engine](https://github.com/jiaaom/CUDA_TFHE) is the CUDA execution backend.
+[CUDA Engine](https://github.com/jiaaom/pyTFHE-CUDA) is the CUDA execution backend.
 
 [PyTFHE-rs](https://github.com/jiaaom/pyTFHE-rs) contains the support library for building graphs, IR support, and scheduler.
 
 [Frontend](https://github.com/jiaaom/pyTFHE-Frontend) is the frontend for compilation, scheduler, and execution engines.
 
-[Benchmarks](https://github.com/jiaaom/tnfs-benchmarks) contains some optional benchmarks used for performance testing.
+[Benchmarks](https://github.com/jiaaom/pyTFHE-Benchmarks) contains some optional benchmarks used for performance testing.
