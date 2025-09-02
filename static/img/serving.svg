@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Privacy-Preserving Server Offload Icon</title>
+  <desc id="desc">An icon showing a client device offloading computation to a server with a shield/lock for privacy, representing server-side serving.</desc>
+
+  <defs>
+    <style>
+      :root{
+        --accent:#5b8cff;   /* offload arrow + lights */
+        --secure:#24c4a8;   /* shield/lock */
+        --ink:#0f172a;      /* strokes */
+        --muted:#e6e8ef;    /* ports/lights muted */
+      }
+      .stroke-ink{stroke:var(--ink);}
+      .fill-accent{fill:var(--accent);}
+      .fill-secure{fill:var(--secure);}
+      .fill-muted{fill:var(--muted);}
+    </style>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Left: Client device (the thing doing the offload) -->
+  <g transform="translate(20,84)">
+    <rect x="0" y="8" width="76" height="88" rx="12" ry="12" fill="none" class="stroke-ink" stroke-width="4"/>
+    <!-- tiny compute chip inside -->
+    <g transform="translate(22,32)">
+      <rect x="0" y="0" width="32" height="28" rx="4" ry="4" fill="none" class="stroke-ink" stroke-width="3"/>
+      <line x1="-6" y1="6" x2="0" y2="6" class="stroke-ink" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-6" y1="14" x2="0" y2="14" class="stroke-ink" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-6" y1="22" x2="0" y2="22" class="stroke-ink" stroke-width="3" stroke-linecap="round"/>
+      <line x1="32" y1="6" x2="38" y2="6" class="stroke-ink" stroke-width="3" stroke-linecap="round"/>
+      <line x1="32" y1="14" x2="38" y2="14" class="stroke-ink" stroke-width="3" stroke-linecap="round"/>
+      <line x1="32" y1="22" x2="38" y2="22" class="stroke-ink" stroke-width="3" stroke-linecap="round"/>
+      <!-- bit dots to whisper "Boolean" without yelling -->
+      <circle cx="10" cy="14" r="2" class="fill-accent"/>
+      <circle cx="22" cy="14" r="2" class="fill-accent"/>
+    </g>
+    <!-- device details -->
+    <circle cx="38" cy="4" r="2" class="fill-muted"/>
+    <rect x="30" y="96" width="16" height="4" rx="2" class="fill-muted"/>
+  </g>
+
+  <!-- Offload arrow to server -->
+  <g transform="translate(96,120)">
+    <path d="M0,8 L54,8" class="stroke-ink" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="54,-8 86,8 54,24" class="fill-accent" filter="url(#s)"/>
+  </g>
+
+  <!-- Right: Server rack (serving) -->
+  <g transform="translate(150,54)" filter="url(#s)">
+    <rect x="0" y="0" width="86" height="132" rx="14" ry="14" fill="white"/>
+    <rect x="0" y="0" width="86" height="132" rx="14" ry="14" fill="none" class="stroke-ink" stroke-width="4"/>
+    <!-- rack shelves -->
+    <line x1="8" y1="44" x2="78" y2="44" class="stroke-ink" stroke-width="2"/>
+    <line x1="8" y1="88" x2="78" y2="88" class="stroke-ink" stroke-width="2"/>
+    <!-- indicators -->
+    <circle cx="18" cy="22" r="4" class="fill-accent"/>
+    <circle cx="30" cy="22" r="4" class="fill-muted"/>
+    <circle cx="42" cy="22" r="4" class="fill-muted"/>
+    <rect x="12" y="56" width="20" height="6" rx="3" class="fill-muted"/>
+    <rect x="36" y="56" width="38" height="6" rx="3" class="fill-muted"/>
+    <rect x="12" y="100" width="62" height="6" rx="3" class="fill-muted"/>
+  </g>
+
+  <!-- Privacy: Shield + lock over the server -->
+  <g transform="translate(168,78)">
+    <!-- shield -->
+    <path d="M28,0 L52,10 V28 c0,18 -12,30 -24,36 C16,58 4,46 4,28 V10 Z"
+          class="fill-secure" />
+    <path d="M28,0 L52,10 V28 c0,18 -12,30 -24,36 C16,58 4,46 4,28 V10 Z"
+          fill="none" class="stroke-ink" stroke-width="4"/>
+    <!-- lock inside shield -->
+    <g transform="translate(16,20)">
+      <path d="M6,10 C6,4 10,0 16,0 C22,0 26,4 26,10" fill="none" class="stroke-ink" stroke-width="3" stroke-linecap="round"/>
+      <rect x="2" y="10" width="28" height="22" rx="5" ry="5" class="fill-secure"/>
+      <rect x="2" y="10" width="28" height="22" rx="5" ry="5" fill="none" class="stroke-ink" stroke-width="3"/>
+      <circle cx="16" cy="20" r="3" fill="white"/>
+      <rect x="14.5" y="23" width="3" height="6" rx="1.5" ry="1.5" fill="white"/>
+    </g>
+  </g>
+</svg>

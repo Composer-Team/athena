@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <rect width="128" height="128" rx="20" fill="#1E1E1E"/>
+  <!-- Boolean gate-like circles -->
+  <circle cx="32" cy="64" r="12" stroke="#00FFD1" stroke-width="3" fill="none"/>
+  <circle cx="64" cy="64" r="12" stroke="#00FFD1" stroke-width="3" fill="none"/>
+  <circle cx="96" cy="64" r="12" stroke="#00FFD1" stroke-width="3" fill="none"/>
+  <!-- connecting lines -->
+  <line x1="44" y1="64" x2="52" y2="64" stroke="#00FFD1" stroke-width="3"/>
+  <line x1="76" y1="64" x2="84" y2="64" stroke="#00FFD1" stroke-width="3"/>
+  <!-- execution arrow -->
+  <path d="M100 64 L116 56 V72 Z" fill="#00FFD1"/>
+  <!-- subtle grid for “compilation/execution framework” -->
+  <path d="M16 32 H112 M16 96 H112 M32 16 V112 M96 16 V112" 
+        stroke="#333" stroke-width="1" stroke-dasharray="4 4"/>
+</svg>
