@@ -15,12 +15,14 @@ It consists of multiple submodules that decouples the frontend (compilation and 
 PyTFHE-OSS has been tested under Ubuntu 22.04 and RHEL9.
 It consists of the following submodules:
 
-[CPU Engine](https://github.com/jiaaom/pyTFHE-CPU) is the CPU execution backend.
+- [CPU Engine](https://github.com/jiaaom/pyTFHE-CPU) is the CPU execution backend.
 
-[CUDA Engine](https://github.com/jiaaom/pyTFHE-CUDA) is the CUDA execution backend.
+- [CUDA Engine](https://github.com/jiaaom/pyTFHE-CUDA) is the CUDA execution backend.
 
-[PyTFHE-rs](https://github.com/jiaaom/pyTFHE-rs) contains the support library for building graphs, IR support, and scheduler.
+- [PyTFHE-rs](https://github.com/jiaaom/pyTFHE-rs) contains the support library for building graphs, IR support, and scheduler.
 
-[Frontend](https://github.com/jiaaom/pyTFHE-Frontend) is the frontend for compilation, scheduler, and execution engines.
+- [Frontend](https://github.com/jiaaom/pyTFHE-Frontend) is the frontend for compilation, scheduler, and execution engines.
 
-[Benchmarks](https://github.com/jiaaom/pyTFHE-Benchmarks) contains some optional benchmarks used for performance testing.
+- [Benchmarks](https://github.com/jiaaom/pyTFHE-Benchmarks) contains some optional benchmarks used for performance testing.
+
+- [ChiselTorch](https://github.com/jiaaom/chisel-torch) is a Chisel implementation of a PyTorch-Like Interface for Accelerator Generation.

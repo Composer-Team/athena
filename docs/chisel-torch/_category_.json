@@ -1,0 +1,8 @@
+{
+  "label": "ChiselTorch",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "ChiselTorch, the compiler that allows easy generations of privacy-preserving deep neural network models with PyTorch-compatible APIs."
+  }
+}

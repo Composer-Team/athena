@@ -31,32 +31,6 @@ PyTFHE-Frontend is a comprehensive Python framework for Fully Homomorphic Encryp
 4. **Execution**: Run on CPU (serial/distributed) or GPU with FHE operations
 5. **Result Collection**: Decrypt and return computed outputs
 
-## Module Ecosystem
-
-### Input/Output Modules
-
-| Module | Purpose | Key Formats |
-|--------|---------|-------------|
-| **[aiger_tools](aiger_tools.md)** | AIGER circuit parsing and manipulation | `.aag` files, NetworkX graphs |
-| **[asm_tools](asm_tools.md)** | Binary assembly format handling | TNFS binary, LUT binary |
-| **[xls_ir2tasm](xls_ir2tasm.md)** | XLS IR to TASM conversion | `.bool.ir` → `.tasm` |
-
-### Execution Modules
-
-| Module | Purpose | Key Features |
-|--------|---------|--------------|
-| **[runner](runner.md)** | Core execution engines | CPU/GPU execution, Ray distributed computing |
-| **[simulate](simulate.md)** | Circuit simulation and verification | Plain-text simulation, FHE validation |
-| **[benchmark](benchmark.md)** | Performance measurement | Throughput testing, latency profiling |
-
-### Utility Modules
-
-| Module | Purpose | Key Features |
-|--------|---------|--------------|
-| **[graph](graph.md)** | Graph manipulation utilities | Circuit duplication, composition |
-| **[unary](unary.md)** | Stochastic computing operations | Bitstream operations, probabilistic computing |
-| **[tests](tests.md)** | Comprehensive test suite | Unit tests, integration tests, stress testing |
-
 ## Supported Circuit Formats
 
 ### AIGER Format
