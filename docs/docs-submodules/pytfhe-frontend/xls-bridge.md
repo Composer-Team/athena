@@ -4,7 +4,6 @@ sidebar_position: 2
 
 # XLS IR to TASM Converter
 
-## Purpose
 The `xls_ir2tasm` module provides conversion utilities from XLS (Accelerated HLS) Intermediate Representation (IR) to TASM (TFHE Assembly) format. XLS is Google's hardware synthesis tool that generates optimized hardware descriptions, and this module bridges XLS output to the PyTFHE execution format.
 
 ## Core Components

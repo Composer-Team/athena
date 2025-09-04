@@ -4,7 +4,6 @@ sidebar_position: 3
 
 # TFHE Assembly (TASM) Tools
 
-## Purpose
 The `asm_tools` module provides utilities for loading and parsing binary assembly formats used in the PyTFHE system. It handles two main binary formats: TNFS (Threshold Network File System) binary format and LUT (Look-Up Table) binary format. These formats represent compiled circuits in a form optimized for FHE execution.
 
 ## Core Components
