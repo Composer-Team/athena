@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# PyTFHE-CUDA API Reference
+# PyTFHE-CUDA
 
 PyTFHE-CUDA is the CUDA backend for Boolean TFHE program execution.
 It can be used as a low-level standalone library, and also by other components in PyTFHE.

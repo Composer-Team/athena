@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Circuit Applications with AIGER Tools
+# AIGER Tools
 
 ## Overview
 

@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'PyTFHE OSS',
+  title: 'The PyTFHE-OSS Framework',
   tagline: 'An End-to-End Compilation and Execution Framework for Fully Homomorphic Encryption Applications',
   favicon: 'img/favicon.ico',
 
@@ -78,13 +78,21 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+      id: 'support_us',
+      content:
+        'PyTFHE-OSS docs just got released!',
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+      isCloseable: true,
+    },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'PyTFHE-OSS',
         logo: {
           alt: 'PyTFHE',
-          src: 'img/logo.svg',
+          src: 'img/pytfhe-icon-small.png',
         },
         items: [
           {
@@ -144,7 +152,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} APEX Lab at Duke Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} APEX Lab at Duke University. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

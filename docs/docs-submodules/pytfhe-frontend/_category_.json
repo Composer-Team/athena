@@ -1,0 +1,8 @@
+{
+  "label": "PyTFHE-Frontend",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "PyTFHE-rs is the swiss army knife of circuit compilation and scheduling for homomorphic encryption circuits."
+  }
+}
