@@ -13,7 +13,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <img
-          src="/img/pytfhe-icon.png"
+          src="img/pytfhe-icon.png"
           alt="PyTFHE Icon"
           style={{ display: 'block', margin: '0 auto 1rem', maxWidth: '160px', width: '100%' }}
         />
