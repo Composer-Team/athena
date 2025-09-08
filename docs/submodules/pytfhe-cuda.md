@@ -16,7 +16,7 @@ The implementation is based on [cuFHE](https://github.com/vernamlab/cuFHE).
 - Python 3.6 or later
 
 #### Required Dependencies
-- **CUDA Toolkit** (version 11.8 or compatible)
+- **CUDA Toolkit** (version 13.0 or compatible)
 - **pybind11** - Python binding generator
 - **python3-dev** - Python development headers
 - **clang-15** (preferred) or **clang** - C++ compiler

@@ -4,25 +4,25 @@ sidebar_position: 1
 
 # PyTFHE Intro
 
-PyTFHE is an end-to-end compilation and execution framework for fully homomorphic encryption (FHE) applications.
-Specifically, we use the FHE over the Torus (TFHE) scheme [CITE] as our main focus.
+PyTFHE is an end-to-end compilation and execution framework for fully homomorphic encryption (FHE) applications.  
+In particular, it focuses on the [TFHE scheme](https://eprint.iacr.org/2018/421).
 
-PyTFHE-OSS is the open-source version that optimized for cleaness and usability.
-It consists of multiple submodules that decouples the frontend (compilation and assemble) and backend (execution on various platforms). 
+PyTFHE-OSS is the open-source version, optimized for clarity and usability.  
+It is organized into multiple submodules that decouple the frontend (compilation and assembly) from the backend (execution on various platforms).
 
 ## Getting Started
 
-PyTFHE-OSS has been tested under Ubuntu 22.04 and RHEL9.
-It consists of the following submodules:
+PyTFHE-OSS has been tested on Ubuntu 22.04 and RHEL 9/10.  
+It consists of the following submodules, which we recommend exploring and installing in the order listed:
 
-- [CPU Engine](https://github.com/jiaaom/pyTFHE-CPU) is the CPU execution backend.
+- [CPU Engine](https://github.com/jiaaom/pyTFHE-CPU): CPU execution backend.
 
-- [CUDA Engine](https://github.com/jiaaom/pyTFHE-CUDA) is the CUDA execution backend.
+- [CUDA Engine](https://github.com/jiaaom/pyTFHE-CUDA): CUDA execution backend.
 
-- [PyTFHE-rs](https://github.com/jiaaom/pyTFHE-rs) contains the support library for building graphs, IR support, and scheduler.
+- [PyTFHE-rs](https://github.com/jiaaom/pyTFHE-rs): Support library for graph construction, IR support, and scheduling.
 
-- [Frontend](https://github.com/jiaaom/pyTFHE-Frontend) is the frontend for compilation, scheduler, and execution engines.
+- [Frontend](https://github.com/jiaaom/pyTFHE-Frontend): Frontend for compilation, scheduling, and integration with execution engines.
 
-- [Benchmarks](https://github.com/jiaaom/pyTFHE-Benchmarks) contains some optional benchmarks used for performance testing.
+- [ChiselTorch](https://github.com/jiaaom/chisel-torch): A Chisel implementation of a PyTorch-like interface for accelerator generation.
 
-- [ChiselTorch](https://github.com/jiaaom/chisel-torch) is a Chisel implementation of a PyTorch-Like Interface for Accelerator Generation.
+- [Benchmarks](https://github.com/jiaaom/pyTFHE-Benchmarks): Optional benchmark suite for performance testing.
