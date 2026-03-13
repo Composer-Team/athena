@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpy_tfhe_oss_doc=self.webpackChunkpy_tfhe_oss_doc||[]).push([[1933],{442:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/athena-web/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
