@@ -90,7 +90,7 @@ const config = {
       isCloseable: true,
     },
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/athenalogo.png',
       navbar: {
         title: 'Athena-RAG',
         logo: {
