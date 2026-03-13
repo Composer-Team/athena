@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'The PyTFHE-OSS Framework',
-  tagline: 'An End-to-End Compilation and Execution Framework for Fully Homomorphic Encryption Applications',
-  favicon: 'img/favicon.ico',
+  title: 'The Athena Framework',
+  tagline: 'An End-to-End Framework for Retrieval-Augmented Generation in LLM Serving',
+  favicon: 'img/athenalogo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -23,12 +23,12 @@ const config = {
   url: 'https://composer-team.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/pytfhe/',
+  baseUrl: '/athena-web/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'composer-team', // Usually your GitHub org/user name.
-  projectName: 'pytfhe', // Usually your repo name.
+  organizationName: 'Composer-Team', // Usually your GitHub org/user name.
+  projectName: 'athena-web', // Usually your repo name.
 
   deploymentBranch: 'main',
   trailingSlash: false,
@@ -84,7 +84,7 @@ const config = {
       announcementBar: {
       id: 'support_us',
       content:
-        'PyTFHE-OSS docs just got released!',
+        'Athena docs just got released!',
       backgroundColor: '#fafbfc',
       textColor: '#091E42',
       isCloseable: true,
@@ -92,10 +92,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'PyTFHE-OSS',
+        title: 'Athena-RAG',
         logo: {
-          alt: 'PyTFHE',
-          src: 'img/pytfhe-icon-small.png',
+          alt: 'Athena',
+          src: 'img/athenalogo.png',
         },
         items: [
           {

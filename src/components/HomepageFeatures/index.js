@@ -4,40 +4,40 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'End-to-end',
-    Svg: require('@site/static/img/end-to-end.svg').default,
+    title: 'End-to-End',
+    img: 'img/e2e.png',
+    imgStyle: { maxHeight: '250px', maxWidth: '250px' },
     description: (
       <>
-        An end-to-end framework for compiling and executing Boolean TFHE programs.
+        Evaluate the complete RAG pipeline—from embedding generation through vector retrieval to LLM response—in a single unified framework.
       </>
     ),
   },
   {
-    title: 'Designed for Serving',
-    Svg: require('@site/static/img/serving.svg').default,
+    title: 'Flexible',
+    img: 'img/pnp.png',
     description: (
       <>
-        Aims at privacy-preserving computation offload on the server side.
+        Modular plug-and-play architecture lets you swap embedding models, vector databases, and LLM backends. Because no single configuration fits every RAG workload.
       </>
     ),
   },
   {
-    title: 'High Performant',
-    Svg: require('@site/static/img/rocket.svg').default,
+    title: 'Advisory',
+    img: 'img/advisory.png',
     description: (
       <>
-        Achieves up to two orders of magnitude performance advantage
-        over existing frameworks.
+        Easily extract the metrics that matter—latency, throughput, accuracy, and resource utilization—to guide optimization decisions for your specific deployment constraints.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({img, imgStyle, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={img} className={styles.featureSvg} style={imgStyle} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

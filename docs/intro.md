@@ -2,48 +2,40 @@
 sidebar_position: 1
 ---
 
-# PyTFHE Intro
+# Athena Intro
 
-PyTFHE is an end-to-end compilation and execution framework for fully homomorphic encryption (FHE) applications.  
-In particular, it focuses on the [TFHE scheme](https://eprint.iacr.org/2018/421).
-
-PyTFHE-OSS is the open-source version, optimized for clarity and usability.  
-It is organized into multiple submodules that decouple the frontend (compilation and assembly) from the backend (execution on various platforms).
+Athena is an end-to-end framework for Retrieval-Augmented Generation (RAG) applications. It allows users to build flexible RAG systems and provides system design guidelines through different kinds of metrics. This is the open-source version, optimized for clarity and usability. It is organized into multiple submodules that hide the complexity of the backends (vector database, LLM, etc) and enable flexible builds for RAG systems for different purposes.
 
 ## Getting Started
 
-PyTFHE-OSS has been tested on Ubuntu 22.04 and RHEL 9/10.  
-It consists of the following submodules, which we recommend exploring and installing in the order listed:
+This version of Athena consists of the following submodules:
 
-- [CPU Engine](https://github.com/jiaaom/pyTFHE-CPU): CPU execution backend.
+- [Vector Database Interface](./submodules/database): Nearest Neighbor Search, Data Insertion/Deletion, etc
 
-- [CUDA Engine](https://github.com/jiaaom/pyTFHE-CUDA): CUDA execution backend.
+- [Embedding Model Interface](./submodules/Embedding): Embedding Vector Model Hosting and Generation
 
-- [PyTFHE-rs](https://github.com/jiaaom/pyTFHE-rs): Support library for graph construction, IR support, and scheduling.
+- [LLM Interface](./submodules/LLM): LLM Querying and Evaluation
 
-- [Frontend](https://github.com/jiaaom/pyTFHE-Frontend): Frontend for compilation, scheduling, and integration with execution engines.
+- [Profiling](./submodules/Profiling): How to collect metrics using Athena
 
-- [ChiselTorch](https://github.com/jiaaom/chisel-torch): A Chisel implementation of a PyTorch-like interface for accelerator generation.
-
-- [Benchmarks](https://github.com/jiaaom/pyTFHE-Benchmarks): Optional benchmark suite for performance testing.
+- [Configuration Reference](./submodules/Configuration): All config.yaml fields explained
 
 ## Citation
 
-If you use PyTFHE for your research, please cite [our paper](https://users.cs.duke.edu/~lkw34/papers/ma-pytfhe-ispass2023.pdf):
+If you use Athena for your research, please cite [our paper](https://users.cs.duke.edu/~lkw34/papers/ma-pytfhe-ispass2023.pdf):
 
 ```bibtex
-@inproceedings{PyTFHE,
-  title = {{{PyTFHE}}: {{An End-to-End Compilation}} and {{Execution Framework}} for {{Fully Homomorphic Encryption Applications}}},
-  shorttitle = {{{PyTFHE}}},
-  booktitle = {2023 {{IEEE International Symposium}} on {{Performance Analysis}} of {{Systems}} and {{Software}} ({{ISPASS}})},
-  author = {Ma, Jiaao and Xu, Ceyu and Wills, Lisa Wu},
-  year = {2023},
-  month = apr,
-  pages = {24--34},
-  publisher = {IEEE},
-  address = {Raleigh, NC, USA},
-  doi = {10.1109/ISPASS57527.2023.00012},
-  isbn = {979-8-3503-9739-0},
-}
+
+@INPROCEEDINGS{11241995,
+  author={Liang, Ning and Wenz, Fabian and Giceva, Jana and Wills, Lisa Wu},
+  booktitle={2025 IEEE International Symposium on Workload Characterization (IISWC)}, 
+  title={Athena: A Plug-and-Play Advisor for Retrieval-Augmented Generation using VectorDB}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={28-41},
+  keywords={Systematics;Accuracy;Databases;Large language models;Retrieval augmented generation;Pipelines;Benchmark testing;Throughput;Vectors;Complexity theory;Retrieval Augmented Generation (RAG);Vector Database;Large Language Model (LLM)},
+  doi={10.1109/IISWC66894.2025.00013}}
+
 
 ```
